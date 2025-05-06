@@ -1,0 +1,47 @@
+/* Estilo do corpo e fundo */
+body {
+    background-color: #000;
+    color: #00ff00; /* Verde terminal */
+    font-family: 'Courier New', Courier, monospace; /* Fonte de terminal */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container principal */
+  .terminal {
+    text-align: center;
+    border: 2px solid #00ff00; /* Borda do terminal */
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    background-color: black;
+  }
+  
+  /* Título do Relatório */
+  .glitch {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Estilo da área de saída, onde a frase será exibida */
+  .output {
+    font-size: 1.2rem;
+    white-space: nowrap; /* Para garantir que o texto não quebre em várias linhas */
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo do cursor piscando */
+  .cursor {
+    animation: blink 1s step-end infinite; /* Faz o cursor piscar */
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
